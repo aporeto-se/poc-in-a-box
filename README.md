@@ -85,6 +85,7 @@ git clone https://github.com/aporeto-se/poc-in-a-box.git
 cd poc-in-a-box
 # edit the file settings
 source env_shell
+source settings
 apoctl configure -n /$GROUP/$CLOUD -t $TOKEN
 all/create
 ```
