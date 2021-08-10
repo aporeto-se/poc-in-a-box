@@ -90,7 +90,7 @@ apoctl configure -n /$GROUP/$CLOUD -t $TOKEN
 all/create
 ```
 
-Whe finished
+When finished
 ```bash
 all/delete
 ```
