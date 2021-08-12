@@ -1,4 +1,4 @@
 #!/bin/bash
 
-stupid-curl "frontend.nashville.svc.cluster.local"
-stupid-curl "backend.nashville.svc.cluster.local"
+stupid-curl "frontend.knoxville.svc.cluster.local"
+stupid-curl "backend.knoxville.svc.cluster.local"
