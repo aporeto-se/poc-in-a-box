@@ -44,7 +44,7 @@ data:
           observationEnabled: false
           protocolPorts:
             - any
-      name: backend inter-app
+      name: backend intra-app
       outgoingRules:
         - action: Allow
           logsDisabled: false
