@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend1
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: frontend
     sim-cloud: "AWS"
@@ -33,7 +33,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -67,7 +67,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend2
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: frontend
     sim-cloud: "AWS"
@@ -98,7 +98,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -132,7 +132,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend3
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: frontend
     sim-cloud: "AWS"
@@ -163,7 +163,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -197,7 +197,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend4
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: frontend
     sim-cloud: "Azure"
@@ -228,7 +228,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -262,7 +262,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend1
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: backend
     sim-cloud: "AWS"
@@ -293,7 +293,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -327,7 +327,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend2
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: backend
     sim-cloud: "AWS"
@@ -358,7 +358,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -392,7 +392,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend3
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: backend
     sim-cloud: "AWS"
@@ -423,7 +423,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -457,7 +457,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend4
-  namespace: knoxville
+  namespace: memphis
   labels:
     app: backend
     sim-cloud: "Azure"
@@ -488,7 +488,7 @@ spec:
         - containerPort: 8080
         env:
         - name: LISTEN
-          value: "0.0.0.0:8080"
+          value: ":80"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
